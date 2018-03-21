@@ -55,7 +55,7 @@ module.exports = {
         new ExtractTextPlugin('style.css'), //提取内联样式表到style.css文件
 			new webpack.optimize.CommonsChunkPlugin({
 				name:'common', // 注意不要.js后缀
-				chunks:['main','add','reducer']
+				chunks:['main','add','reducer']//通过CommonsChunkPlugin，我们把公共代码专门抽取到一个common.js，这样业务代码只在main.js，add.js，reducer.js
 			}),
     ]
 }
