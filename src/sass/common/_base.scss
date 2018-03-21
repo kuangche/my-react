@@ -1,0 +1,105 @@
+html {
+  font-size: 100px;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-family;
+  height: 100%;
+  font-size:0.28rem;
+  overflow-x: hidden;
+}
+
+html,body,ul, li, h1, h2, h3, h4, h5, h6, table, th, td ,p{
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none !important;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.text-hidden{
+  overflow: hidden;
+  text-indent: -999rem;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 26.66px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  html {
+    font-size: 35.57px;
+  }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1680px) {
+  html {
+    font-size: 43.75px;
+  }
+}
+@media screen and (min-width: 1681px)  and (max-width: 1920px) {
+  html {
+    font-size:50px;
+  }
+}
+@media screen and (min-width: 3840px)  and (min-width: 1921px) {
+  html {
+    font-size:100px;
+  }
+}
+
+/*自定义滚动条样式*/
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-border-radius: 2px;
+  border-radius: 2px
+}
+
+::-webkit-scrollbar-button {
+  display: none
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  min-height: 15px;
+  background: rgba(50,50,50,0.6) !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-border-radius: 2px;
+  border-radius: 2px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.5) !important
+}
+
+.btn{
+  .btn-primary{
+    background-color: #227eb6;
+  }
+}
