@@ -1,4 +1,5 @@
 #### 安装依赖包
+```
 npm install
 cnpm install
 ```
